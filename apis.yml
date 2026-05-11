@@ -1,0 +1,56 @@
+aid: insightly
+name: Insightly
+description: >-
+  Insightly is a CRM and project management platform for small and mid-sized
+  businesses, combining contact and lead management, opportunity pipelines,
+  project delivery, and marketing automation. The Insightly REST API provides
+  programmatic access to contacts, organizations, leads, opportunities,
+  projects, products, price books, quotes, and custom objects for CRM
+  integrations and workflow automation.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - CRM
+  - Project Management
+  - Lead Management
+  - Opportunities
+  - Contacts
+  - SMB
+url: https://raw.githubusercontent.com/api-evangelist/insightly/refs/heads/main/apis.yml
+created: '2026-05-11'
+modified: '2026-05-11'
+specificationVersion: '0.19'
+apis:
+  - aid: insightly:rest-api
+    name: Insightly REST API v3.1
+    description: >-
+      REST API for managing contacts, organizations, leads, opportunities,
+      projects, tasks, events, products, price books, quotes, and custom
+      objects in Insightly. Uses HTTP Basic authentication with a Base64-encoded
+      API key as the username and an empty password, against a pod-specific
+      host.
+    humanURL: https://api.insightly.com/v3.1/Help
+    baseURL: https://api.{pod}.insightly.com/v3.1
+    tags:
+      - CRM
+      - Contacts
+      - Leads
+      - Opportunities
+      - Projects
+    properties:
+      - type: Documentation
+        url: https://api.insightly.com/v3.1/Help
+common:
+  - type: Website
+    url: https://www.insightly.com
+  - type: Documentation
+    url: https://api.insightly.com/v3.1/Help
+  - type: Support
+    url: https://support.insightly.com
+  - type: Sign Up
+    url: https://www.insightly.com/signup/
+  - type: Pricing
+    url: https://www.insightly.com/pricing/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

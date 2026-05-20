@@ -41,6 +41,10 @@ apis:
       - type: Documentation
         url: https://api.insightly.com/v3.1/Help
 common:
+  - type: GitHubOrganization
+    url: https://github.com/Insightly
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/insightly
   - type: Website
     url: https://www.insightly.com
   - type: Documentation

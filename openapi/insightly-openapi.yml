@@ -1,0 +1,201 @@
+openapi: 3.1.0
+info:
+  title: Insightly CRM API
+  description: |
+    Insightly CRM REST API v3.1. Supports CRUD over Contacts, Organizations,
+    Opportunities, Leads, Projects, Products, Quotations, and more. Authentication
+    is HTTP Basic with a Base64-encoded API key as the username.
+  version: "3.1"
+  contact:
+    name: Insightly API Help
+    url: https://api.insightly.com/v3.1/Help
+servers:
+  - url: https://api.{pod}.insightly.com/v3.1
+    description: Pod-specific base URL (your pod is shown in User Settings under API Key)
+    variables:
+      pod:
+        default: na1
+security:
+  - BasicAuth: []
+paths:
+  /Contacts:
+    get:
+      summary: List contacts
+      operationId: listContacts
+      parameters:
+        - in: query
+          name: top
+          schema: { type: integer }
+        - in: query
+          name: skip
+          schema: { type: integer }
+      responses:
+        "200":
+          description: Array of contacts
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Contact' }
+    post:
+      summary: Create a contact
+      operationId: createContact
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Contact' }
+      responses:
+        "201":
+          description: Created contact
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Contact' }
+  /Contacts/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema: { type: integer, format: int64 }
+    get:
+      summary: Get a contact
+      operationId: getContact
+      responses:
+        "200":
+          description: Contact
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Contact' }
+    put:
+      summary: Update a contact
+      operationId: updateContact
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/Contact' }
+      responses:
+        "200":
+          description: Updated contact
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/Contact' }
+    delete:
+      summary: Delete a contact
+      operationId: deleteContact
+      responses:
+        "202":
+          description: Deleted
+  /Contacts/Search:
+    get:
+      summary: Search contacts by field
+      operationId: searchContacts
+      parameters:
+        - in: query
+          name: field_name
+          schema: { type: string }
+        - in: query
+          name: field_value
+          schema: { type: string }
+      responses:
+        "200":
+          description: Search results
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: '#/components/schemas/Contact' }
+  /Organisations:
+    get:
+      summary: List organisations
+      operationId: listOrganisations
+      responses:
+        "200":
+          description: Array of organisations
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: object }
+  /Opportunities:
+    get:
+      summary: List opportunities
+      operationId: listOpportunities
+      responses:
+        "200":
+          description: Array of opportunities
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: object }
+  /Leads:
+    get:
+      summary: List leads
+      operationId: listLeads
+      responses:
+        "200":
+          description: Array of leads
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: object }
+  /Projects/{id}:
+    parameters:
+      - in: path
+        name: id
+        required: true
+        schema: { type: integer, format: int64 }
+    get:
+      summary: Get a project
+      operationId: getProject
+      responses:
+        "200":
+          description: Project
+          content:
+            application/json:
+              schema: { type: object }
+  /Products:
+    get:
+      summary: List products
+      operationId: listProducts
+      responses:
+        "200":
+          description: Array of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: object }
+  /Quotations:
+    get:
+      summary: List quotations
+      operationId: listQuotations
+      responses:
+        "200":
+          description: Array of quotations
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: object }
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+      description: |
+        Username is the Base64-encoded API key; password is left blank.
+        Example header: Authorization: Basic <base64(apiKey:)>
+  schemas:
+    Contact:
+      type: object
+      properties:
+        CONTACT_ID: { type: integer, format: int64 }
+        FIRST_NAME: { type: string }
+        LAST_NAME: { type: string }
+        EMAIL_ADDRESS: { type: string, format: email }
+        PHONE: { type: string }
+        DATE_CREATED_UTC: { type: string, format: date-time }
+        DATE_UPDATED_UTC: { type: string, format: date-time }

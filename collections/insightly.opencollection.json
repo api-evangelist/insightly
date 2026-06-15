@@ -1,0 +1,209 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Insightly CRM API",
+    "version": "3.1"
+  },
+  "request": {
+    "auth": {
+      "type": "basic",
+      "username": "{{username}}",
+      "password": "{{password}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "List contacts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts",
+        "params": [
+          {
+            "name": "top",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "skip",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "List contacts"
+    },
+    {
+      "info": {
+        "name": "Create a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a contact"
+    },
+    {
+      "info": {
+        "name": "Get a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a contact"
+    },
+    {
+      "info": {
+        "name": "Update a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "PUT",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Update a contact"
+    },
+    {
+      "info": {
+        "name": "Delete a contact",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a contact"
+    },
+    {
+      "info": {
+        "name": "Search contacts by field",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Contacts/Search",
+        "params": [
+          {
+            "name": "field_name",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "field_value",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Search contacts by field"
+    },
+    {
+      "info": {
+        "name": "List organisations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Organisations"
+      },
+      "docs": "List organisations"
+    },
+    {
+      "info": {
+        "name": "List opportunities",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Opportunities"
+      },
+      "docs": "List opportunities"
+    },
+    {
+      "info": {
+        "name": "List leads",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Leads"
+      },
+      "docs": "List leads"
+    },
+    {
+      "info": {
+        "name": "Get a project",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Projects/:id",
+        "params": [
+          {
+            "name": "id",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a project"
+    },
+    {
+      "info": {
+        "name": "List products",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Products"
+      },
+      "docs": "List products"
+    },
+    {
+      "info": {
+        "name": "List quotations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://api.{pod}.insightly.com/v3.1/Quotations"
+      },
+      "docs": "List quotations"
+    }
+  ],
+  "bundled": true
+}

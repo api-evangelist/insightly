@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/insightly-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: BasicAuth
+  type: http
+  scheme: basic
+  description: |-
+    Username is the Base64-encoded API key; password is left blank.
+    Example header: Authorization: Basic <base64(apiKey:)>
+  sources:
+  - openapi/insightly-openapi.yml

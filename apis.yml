@@ -41,6 +41,12 @@ apis:
       - type: Documentation
         url: https://api.insightly.com/v3.1/Help
 common:
+  - type: VulnerabilityDisclosure
+    url: security/insightly-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/insightly-domain-security.yml
+  - type: Authentication
+    url: authentication/insightly-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/Insightly
   - type: LinkedIn
@@ -55,6 +61,8 @@ common:
     url: https://www.insightly.com/signup/
   - type: Pricing
     url: https://www.insightly.com/pricing/
+  - url: https://www.insightly.com/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

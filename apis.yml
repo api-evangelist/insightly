@@ -41,6 +41,8 @@ apis:
       - type: Documentation
         url: https://api.insightly.com/v3.1/Help
 common:
+  - type: AgenticAccess
+    url: agentic-access/insightly-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/insightly-vulnerability-disclosure.yml
   - type: DomainSecurity

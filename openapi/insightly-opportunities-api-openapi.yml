@@ -1,0 +1,50 @@
+openapi: 3.1.0
+info:
+  title: Insightly CRM Contacts Opportunities API
+  description: 'Insightly CRM REST API v3.1. Supports CRUD over Contacts, Organizations,
+
+    Opportunities, Leads, Projects, Products, Quotations, and more. Authentication
+
+    is HTTP Basic with a Base64-encoded API key as the username.
+
+    '
+  version: '3.1'
+  contact:
+    name: Insightly API Help
+    url: https://api.insightly.com/v3.1/Help
+servers:
+- url: https://api.{pod}.insightly.com/v3.1
+  description: Pod-specific base URL (your pod is shown in User Settings under API Key)
+  variables:
+    pod:
+      default: na1
+security:
+- BasicAuth: []
+tags:
+- name: Opportunities
+paths:
+  /Opportunities:
+    get:
+      summary: List opportunities
+      operationId: listOpportunities
+      responses:
+        '200':
+          description: Array of opportunities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+      tags:
+      - Opportunities
+components:
+  securitySchemes:
+    BasicAuth:
+      type: http
+      scheme: basic
+      description: 'Username is the Base64-encoded API key; password is left blank.
+
+        Example header: Authorization: Basic <base64(apiKey:)>
+
+        '

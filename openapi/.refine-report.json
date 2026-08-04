@@ -1,0 +1,26 @@
+{
+  "provider": "insightly",
+  "sources": [
+    "insightly-contacts-api-openapi.yml",
+    "insightly-leads-api-openapi.yml",
+    "insightly-opportunities-api-openapi.yml",
+    "insightly-organisations-api-openapi.yml",
+    "insightly-products-api-openapi.yml",
+    "insightly-projects-api-openapi.yml",
+    "insightly-quotations-api-openapi.yml"
+  ],
+  "outputs": [
+    "insightly-contacts-api-openapi.yml",
+    "insightly-leads-api-openapi.yml",
+    "insightly-opportunities-api-openapi.yml",
+    "insightly-organisations-api-openapi.yml",
+    "insightly-products-api-openapi.yml",
+    "insightly-projects-api-openapi.yml",
+    "insightly-quotations-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

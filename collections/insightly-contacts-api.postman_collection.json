@@ -1,0 +1,746 @@
+{
+  "item": [
+    {
+      "id": "9fb39bac-43be-4389-9459-76085b88fe3e",
+      "name": "Contacts",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d739bd9d-79b2-4c43-ac64-7344e4a0ce39",
+          "name": "List contacts",
+          "request": {
+            "name": "List contacts",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "top",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "skip",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4a08f32c-b3cf-4c14-80af-c1126e49199f",
+              "name": "Array of contacts",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "top",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "skip",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"CONTACT_ID\": 321,\n    \"FIRST_NAME\": \"string\",\n    \"LAST_NAME\": \"string\",\n    \"EMAIL_ADDRESS\": \"sya@YBOiNzGIgwdndDuNVPhqkeIFhokSXS.lt\",\n    \"PHONE\": \"string\",\n    \"DATE_CREATED_UTC\": \"2001-10-04T11:28:02.169Z\",\n    \"DATE_UPDATED_UTC\": \"2015-10-20T00:59:53.660Z\"\n  },\n  {\n    \"CONTACT_ID\": 9734,\n    \"FIRST_NAME\": \"string\",\n    \"LAST_NAME\": \"string\",\n    \"EMAIL_ADDRESS\": \"4z6C8kxZ@zTBLlkuqqLotvTFMFEvPnEmL.xe\",\n    \"PHONE\": \"string\",\n    \"DATE_CREATED_UTC\": \"1993-03-04T13:17:23.097Z\",\n    \"DATE_UPDATED_UTC\": \"2004-11-10T09:22:39.124Z\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "aa99d0bf-46b2-45cf-be47-5bdc847e96a3",
+          "name": "Create a contact",
+          "request": {
+            "name": "Create a contact",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"CONTACT_ID\": \"<long>\",\n  \"FIRST_NAME\": \"<string>\",\n  \"LAST_NAME\": \"<string>\",\n  \"EMAIL_ADDRESS\": \"<email>\",\n  \"PHONE\": \"<string>\",\n  \"DATE_CREATED_UTC\": \"<dateTime>\",\n  \"DATE_UPDATED_UTC\": \"<dateTime>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "f85a5c31-c5ab-41c5-acda-5a8522e561f9",
+              "name": "Created contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"CONTACT_ID\": \"<long>\",\n  \"FIRST_NAME\": \"<string>\",\n  \"LAST_NAME\": \"<string>\",\n  \"EMAIL_ADDRESS\": \"<email>\",\n  \"PHONE\": \"<string>\",\n  \"DATE_CREATED_UTC\": \"<dateTime>\",\n  \"DATE_UPDATED_UTC\": \"<dateTime>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CONTACT_ID\": 672,\n  \"FIRST_NAME\": \"string\",\n  \"LAST_NAME\": \"string\",\n  \"EMAIL_ADDRESS\": \"LMNzIiiB0-96K@cqPMdSrwYovpmIIs.ah\",\n  \"PHONE\": \"string\",\n  \"DATE_CREATED_UTC\": \"1982-12-18T23:32:39.782Z\",\n  \"DATE_UPDATED_UTC\": \"1949-10-21T08:06:53.462Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "49ccec23-0adb-4cde-97be-f6f2177596d0",
+          "name": "Get a contact",
+          "request": {
+            "name": "Get a contact",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "80d77a4c-4edb-4f58-b50b-b2c7189cf29c",
+              "name": "Contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CONTACT_ID\": 672,\n  \"FIRST_NAME\": \"string\",\n  \"LAST_NAME\": \"string\",\n  \"EMAIL_ADDRESS\": \"LMNzIiiB0-96K@cqPMdSrwYovpmIIs.ah\",\n  \"PHONE\": \"string\",\n  \"DATE_CREATED_UTC\": \"1982-12-18T23:32:39.782Z\",\n  \"DATE_UPDATED_UTC\": \"1949-10-21T08:06:53.462Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8e724a61-9514-4e4f-8894-0194a2c27922",
+          "name": "Update a contact",
+          "request": {
+            "name": "Update a contact",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"CONTACT_ID\": \"<long>\",\n  \"FIRST_NAME\": \"<string>\",\n  \"LAST_NAME\": \"<string>\",\n  \"EMAIL_ADDRESS\": \"<email>\",\n  \"PHONE\": \"<string>\",\n  \"DATE_CREATED_UTC\": \"<dateTime>\",\n  \"DATE_UPDATED_UTC\": \"<dateTime>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "62093af7-634b-4269-b76a-e910784d0d00",
+              "name": "Updated contact",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"CONTACT_ID\": \"<long>\",\n  \"FIRST_NAME\": \"<string>\",\n  \"LAST_NAME\": \"<string>\",\n  \"EMAIL_ADDRESS\": \"<email>\",\n  \"PHONE\": \"<string>\",\n  \"DATE_CREATED_UTC\": \"<dateTime>\",\n  \"DATE_UPDATED_UTC\": \"<dateTime>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"CONTACT_ID\": 672,\n  \"FIRST_NAME\": \"string\",\n  \"LAST_NAME\": \"string\",\n  \"EMAIL_ADDRESS\": \"LMNzIiiB0-96K@cqPMdSrwYovpmIIs.ah\",\n  \"PHONE\": \"string\",\n  \"DATE_CREATED_UTC\": \"1982-12-18T23:32:39.782Z\",\n  \"DATE_UPDATED_UTC\": \"1949-10-21T08:06:53.462Z\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3915829a-32f2-4a2d-896a-628d1621c077",
+          "name": "Delete a contact",
+          "request": {
+            "name": "Delete a contact",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts",
+                ":id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<long>",
+                  "key": "id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ab167c46-f866-42f9-bda9-a09a406178fe",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts",
+                    ":id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<long>",
+                      "key": "id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "Accepted",
+              "code": 202,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "962fe8e4-0d65-4264-88e7-6776b374b58c",
+          "name": "Search contacts by field",
+          "request": {
+            "name": "Search contacts by field",
+            "description": {},
+            "url": {
+              "path": [
+                "Contacts",
+                "Search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "field_name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "field_value",
+                  "value": "<string>"
+                }
+              ],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "264c4f7a-e4d5-4e78-a4a3-2679098bbbdf",
+              "name": "Search results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Contacts",
+                    "Search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "field_name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "field_value",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[\n  {\n    \"CONTACT_ID\": 321,\n    \"FIRST_NAME\": \"string\",\n    \"LAST_NAME\": \"string\",\n    \"EMAIL_ADDRESS\": \"sya@YBOiNzGIgwdndDuNVPhqkeIFhokSXS.lt\",\n    \"PHONE\": \"string\",\n    \"DATE_CREATED_UTC\": \"2001-10-04T11:28:02.169Z\",\n    \"DATE_UPDATED_UTC\": \"2015-10-20T00:59:53.660Z\"\n  },\n  {\n    \"CONTACT_ID\": 9734,\n    \"FIRST_NAME\": \"string\",\n    \"LAST_NAME\": \"string\",\n    \"EMAIL_ADDRESS\": \"4z6C8kxZ@zTBLlkuqqLotvTFMFEvPnEmL.xe\",\n    \"PHONE\": \"string\",\n    \"DATE_CREATED_UTC\": \"1993-03-04T13:17:23.097Z\",\n    \"DATE_UPDATED_UTC\": \"2004-11-10T09:22:39.124Z\"\n  }\n]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "na1",
+      "key": "pod"
+    },
+    {
+      "type": "string",
+      "value": "https://api.{{pod}}.insightly.com/v3.1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e570f10c-3777-4d64-bce0-5a7559518312",
+    "name": "Insightly CRM Contacts API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Insightly CRM REST API v3.1. Supports CRUD over Contacts, Organizations,\nOpportunities, Leads, Projects, Products, Quotations, and more. Authentication\nis HTTP Basic with a Base64-encoded API key as the username.\n\n\nContact Support:\n Name: Insightly API Help",
+      "type": "text/plain"
+    }
+  }
+}

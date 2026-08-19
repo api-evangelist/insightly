@@ -1,0 +1,149 @@
+{
+  "item": [
+    {
+      "id": "9c3063a9-0cd3-43c7-82ef-20fd57d048af",
+      "name": "Organisations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "1ef6d9b7-0c60-4421-a728-826458002104",
+          "name": "List organisations",
+          "request": {
+            "name": "List organisations",
+            "description": {},
+            "url": {
+              "path": [
+                "Organisations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{pod}}",
+                  "key": "pod"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c59d6b80-a28c-45eb-98f6-215fdf97bcbc",
+              "name": "Array of organisations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "Organisations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{pod}}",
+                      "key": "pod"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: basic",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Basic <credentials>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "[]",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "na1",
+      "key": "pod"
+    },
+    {
+      "type": "string",
+      "value": "https://api.{{pod}}.insightly.com/v3.1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": [
+      {
+        "key": "username",
+        "value": "{{basicAuthUsername}}"
+      },
+      {
+        "key": "password",
+        "value": "{{basicAuthPassword}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "47aa4e0d-d6fb-49f3-9f44-3f0ab592d1f5",
+    "name": "Insightly CRM Contacts Organisations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Insightly CRM REST API v3.1. Supports CRUD over Contacts, Organizations,\nOpportunities, Leads, Projects, Products, Quotations, and more. Authentication\nis HTTP Basic with a Base64-encoded API key as the username.\n\n\nContact Support:\n Name: Insightly API Help",
+      "type": "text/plain"
+    }
+  }
+}

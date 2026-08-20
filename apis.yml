@@ -46,6 +46,12 @@ apis:
   - Contacts
   - Leads
   - Opportunities
+  - Project
+  tags_raw:
+  - CRM
+  - Contacts
+  - Leads
+  - Opportunities
   - Projects
   properties:
   - type: Documentation
@@ -96,6 +102,8 @@ apis:
   humanURL: https://api.insightly.com/v3.1/Help
   baseURL: https://api.{pod}.insightly.com/v3.1
   tags:
+  - Product
+  tags_raw:
   - Products
   properties:
   - type: OpenAPI
@@ -106,6 +114,8 @@ apis:
   humanURL: https://api.insightly.com/v3.1/Help
   baseURL: https://api.{pod}.insightly.com/v3.1
   tags:
+  - Project
+  tags_raw:
   - Projects
   properties:
   - type: OpenAPI

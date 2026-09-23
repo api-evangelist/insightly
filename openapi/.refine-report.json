@@ -1,13 +1,7 @@
 {
   "provider": "insightly",
   "sources": [
-    "insightly-contacts-api-openapi.yml",
-    "insightly-leads-api-openapi.yml",
-    "insightly-opportunities-api-openapi.yml",
-    "insightly-organisations-api-openapi.yml",
-    "insightly-products-api-openapi.yml",
-    "insightly-projects-api-openapi.yml",
-    "insightly-quotations-api-openapi.yml"
+    "_original/insightly-openapi.yml"
   ],
   "outputs": [
     "insightly-contacts-api-openapi.yml",
@@ -21,6 +15,37 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "insightly-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "insightly-openapi.yml: tagged paths GET /Contacts -> Contacts",
+    "insightly-openapi.yml: tagged paths POST /Contacts -> Contacts",
+    "insightly-openapi.yml: tagged paths GET /Contacts/{id} -> Contacts",
+    "insightly-openapi.yml: tagged paths PUT /Contacts/{id} -> Contacts",
+    "insightly-openapi.yml: tagged paths DELETE /Contacts/{id} -> Contacts",
+    "insightly-openapi.yml: tagged paths GET /Contacts/Search -> Contacts",
+    "insightly-openapi.yml: tagged paths GET /Organisations -> Organisations",
+    "insightly-openapi.yml: tagged paths GET /Opportunities -> Opportunities",
+    "insightly-openapi.yml: tagged paths GET /Leads -> Leads",
+    "insightly-openapi.yml: tagged paths GET /Projects/{id} -> Projects",
+    "insightly-openapi.yml: tagged paths GET /Products -> Products",
+    "insightly-openapi.yml: tagged paths GET /Quotations -> Quotations",
+    "insightly-openapi.yml: declared missing tag: Contacts",
+    "insightly-openapi.yml: declared missing tag: Leads",
+    "insightly-openapi.yml: declared missing tag: Opportunities",
+    "insightly-openapi.yml: declared missing tag: Organisations",
+    "insightly-openapi.yml: declared missing tag: Products",
+    "insightly-openapi.yml: declared missing tag: Projects",
+    "insightly-openapi.yml: declared missing tag: Quotations",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "insightly-contacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-leads-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-opportunities-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-organisations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-products-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "insightly-quotations-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

@@ -1,13 +1,11 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Insightly CRM Contacts Quotations API
+  title: Insightly CRM Quotations API
   description: 'Insightly CRM REST API v3.1. Supports CRUD over Contacts, Organizations,
 
     Opportunities, Leads, Projects, Products, Quotations, and more. Authentication
 
-    is HTTP Basic with a Base64-encoded API key as the username.
-
-    '
+    is HTTP Basic with a Base64-encoded API key as the username.'
   version: '3.1'
   contact:
     name: Insightly API Help

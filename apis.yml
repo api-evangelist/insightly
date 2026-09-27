@@ -40,6 +40,13 @@ tags:
   - Lead Management
   - Opportunities
   - Contacts
+  - Small Business
+tags_raw:
+  - CRM
+  - Project Management
+  - Lead Management
+  - Opportunities
+  - Contacts
   - SMB
 url: https://raw.githubusercontent.com/api-evangelist/insightly/refs/heads/main/apis.yml
 created: '2026-05-11'

@@ -34,6 +34,9 @@ accessModel:
   generated: '2026-09-03'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/insightly.png
+x-docs-platform: swagger-ui
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
 tags:
   - CRM
   - Project Management
@@ -151,6 +154,9 @@ apis:
   - type: OpenAPI
     url: openapi/insightly-quotations-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/insightly-capability-edges.yml
+    name: Insightly Business Capability Map
   - type: AgenticAccess
     url: agentic-access/insightly-agentic-access.yml
   - type: VulnerabilityDisclosure

@@ -1,0 +1,427 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/insightly/integrations
+checked:
+- https://composio.dev/toolkits/insightly
+- https://monid.ai/tools/insightly
+- https://n8n.io/integrations/insightly/
+- https://zapier.com/apps/insightly/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: insightly
+  url: https://zapier.com/apps/insightly/integrations
+  external_url: https://www.insightly.com/
+  partner_tier: GOLD
+  triggers:
+  - key: deleted_record
+    label: Deleted Record
+  - key: new_record
+    label: New Record
+  - key: updated_field
+    label: Updated Field on Record
+  - key: updated_record
+    label: Updated Record
+  actions:
+  - key: create_record
+    label: Create Record
+  - key: update_record
+    label: Update Record
+  searches:
+  - key: search_record
+    label: Find Record
+edges:
+- partner_name: PandaDoc
+  partner: pandadoc
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/pandadoc
+  direction: third-party
+  category: Documents
+  partner_url: https://www.pandadoc.com/integrations/zapier/?utm_source=zapier-marketplace&utm_medium=partner&utm_campaign=2020-11-inbd-marketplace-websitevisit-pandadoc-zapier-integration
+- partner_name: Mailchimp
+  partner: mailchimp
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/mailchimp
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://mailchimp.com/
+- partner_name: Gravity Forms
+  partner: gravity-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/gravity-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.gravityforms.com/?utm_campaign=partners&utm_source=zapier-listing-learn-more&utm_medium=free-placement
+- partner_name: Typeform
+  partner: typeform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/typeform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.typeform.com/signup?utm_medium=referral&utm_source=zapier&utm_campaign=zapier_integration&utm_content=marketplace
+- partner_name: WPForms
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/wpforms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://wpforms.com/
+- partner_name: Squarespace Forms
+  partner: squarespace
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/squarespace-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.squarespace.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Unbounce
+  partner: unbounce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/unbounce
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://unbounce.com/
+- partner_name: Formstack Documents
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/formstack-documents
+  direction: third-party
+  category: Documents
+  partner_url: https://www.webmerge.me/?utm_source=zapier.com&utm_medium=referral&utm_campaign=partners&utm_content=partner+link
+- partner_name: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/activecampaign
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.activecampaign.com/?utm_source=unpaid_syndication_website&utm_medium=referral&utm_campaign=zapier_listing
+- partner_name: Formidable Forms
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/formidable
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://formidableforms.com/
+- partner_name: Calendly
+  partner: calendly
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/calendly
+  direction: third-party
+  category: Scheduling & Booking
+  partner_url: https://calendly.com/?utm_medium=partner&utm_source=zapier&utm_campaign=main_partner_page&utm_content=main_inbound_link
+- partner_name: Jotform
+  partner: jotform
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/jotform
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: http://www.jotform.com/
+- partner_name: WooCommerce
+  partner: woocommerce
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/woocommerce
+  direction: third-party
+  category: eCommerce
+  partner_url: https://woocommerce.com/products/woocommerce-zapier/?utm_source=zapier&utm_medium=website&utm_campaign=integration
+- partner_name: Wix
+  partner: wix
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/wix
+  direction: third-party
+  category: Website Builders
+  partner_url: https://www.wix.com/
+- partner_name: SiteCapture
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/sitecapture
+  direction: third-party
+  category: Project Management
+  partner_url: http://www.sitecapture.com/
+- partner_name: Trello
+  partner: trello
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/trello
+  direction: third-party
+  category: Project Management
+  partner_url: https://trello.com/
+- partner_name: monday.com
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/monday
+  direction: third-party
+  category: Project Management
+  partner_url: https://monday.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Shopify
+  partner: shopify
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/shopify
+  direction: third-party
+  category: eCommerce
+  partner_url: https://www.shopify.com/
+- partner_name: Slack
+  partner: slack
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/slack
+  direction: third-party
+  category: Team Chat
+  partner_url: https://slack.com/
+- partner_name: Constant Contact
+  partner: constant-contact
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/constant-contact
+  direction: third-party
+  category: Email Newsletters
+  partner_url: http://www.constantcontact.com/signup.jsp?pn=zapier
+- partner_name: Microsoft Office 365
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/office-365
+  direction: third-party
+  category: Email
+  partner_url: https://www.office.com/
+- partner_name: Quotient
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/quotient
+  direction: third-party
+  category: Proposal & Invoice Management
+  partner_url: https://www.quotientapp.com/
+- partner_name: EasyWebinar
+  partner: easywebinar
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/easywebinar
+  direction: third-party
+  category: Webinars
+  partner_url: https://easywebinar.com/
+- partner_name: Xero
+  partner: xero
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/xero
+  direction: third-party
+  category: Accounting
+  partner_url: https://xero5440.partnerlinks.io/uvwuuwrxyoi8
+- partner_name: Qualtrics
+  partner: qualtrics
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/qualtrics
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.qualtrics.com/
+- partner_name: Twilio
+  partner: twilio
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/twilio
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://www.twilio.com/
+templates:
+- title: Create records on Insightly for new Google Ads leads
+  url: https://zapier.com/apps/google-ads/integrations/insightly/543387/create-records-on-insightly-for-new-google-ads-leads
+  apps:
+  - google-ads
+  - insightly
+- title: Send new Facebook Lead Ads leads to Insightly
+  url: https://zapier.com/apps/facebook-lead-ads/integrations/insightly/10164/send-new-facebook-lead-ads-leads-to-insightly
+  apps:
+  - facebook-lead-ads
+  - insightly
+- title: Create new Insightly leads from Calendly invitees
+  url: https://zapier.com/apps/calendly/integrations/insightly/1381863/create-new-insightly-leads-from-calendly-invitees
+  apps:
+  - calendly
+  - insightly
+- title: Create Insightly records from new Gravity Forms submissions
+  url: https://zapier.com/apps/gravity-forms/integrations/insightly/1219368/create-insightly-records-from-new-gravity-forms-submissions
+  apps:
+  - gravity-forms
+  - insightly
+- title: Create Insightly records when new Wix rules trigger
+  url: https://zapier.com/apps/insightly/integrations/wix/1460523/create-insightly-records-when-new-wix-rules-trigger
+  apps:
+  - wix
+  - insightly
+- title: Create Google Sheets rows for new Insightly records
+  url: https://zapier.com/apps/google-sheets/integrations/insightly/1222053/create-google-sheets-rows-for-new-insightly-records
+  apps:
+  - insightly
+  - google-sheets
+- title: Update Insightly leads with new Leadpages form submissions
+  url: https://zapier.com/apps/insightly/integrations/leadpages/1418576/update-insightly-leads-with-new-leadpages-form-submissions
+  apps:
+  - leadpages
+  - insightly
+- title: Verify new email addresses in Insightly with QuickEmailVerification
+  url: https://zapier.com/apps/insightly/integrations/insightly/114775/verify-new-email-addresses-in-insightly-with-quickemailverification
+  apps:
+  - insightly
+  - quickemailverification
+- title: Create records in Insightly from new calls ended in JusCall
+  url: https://zapier.com/apps/insightly/integrations/justcall/135718/create-records-in-insightly-from-new-calls-ended-in-juscall
+  apps:
+  - justcall
+  - insightly
+- title: Install WordPress websites on your own server with new Insightly records
+  url: https://zapier.com/apps/insightly/integrations/wp-website-creator/434079/install-wordpress-websites-on-your-own-server-with-new-insightly-records
+  apps:
+  - insightly
+  - wp-website-creator
+- title: Create Insightly records from new Donately Donation
+  url: https://zapier.com/apps/donately/integrations/insightly/512094/create-insightly-records-from-new-donately-donation
+  apps:
+  - donately
+  - insightly
+- title: Add updated Insightly records as new/updated contacts in a Reply campaign
+  url: https://zapier.com/apps/insightly/integrations/reply/555784/add-updated-insightly-records-as-newupdated-contacts-in-a-reply-campaign
+  apps:
+  - insightly
+  - reply
+template_total: 389

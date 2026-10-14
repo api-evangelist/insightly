@@ -7,6 +7,8 @@ checked:
 - https://monid.ai/tools/insightly
 - https://n8n.io/integrations/insightly/
 - https://zapier.com/apps/insightly/integrations
+- okta/integrations/okta-integration-edges.yml
+- xero/integrations/xero-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -363,6 +365,48 @@ edges:
   direction: third-party
   category: Phone & SMS
   partner_url: https://www.twilio.com/
+- partner_name: Okta (own)
+  partner: okta
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.okta.com/integrations/insightly/
+  mirror_of: okta/integrations/okta-integration-edges.yml
+  apps:
+  - Insightly
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Single Sign-On
+  badges:
+  - OKTA_VERIFIED
+  features:
+  - CREATE
+  - DEACTIVATE
+  - SAML
+  - SWA
+  - UPDATE
+- partner_name: Xero (own)
+  partner: xero
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://apps.xero.com/us/app/insightly-crm
+  mirror_of: xero/integrations/xero-integration-edges.yml
+  apps:
+  - Insightly CRM
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: CRM and marketing
 templates:
 - title: Create records on Insightly for new Google Ads leads
   url: https://zapier.com/apps/google-ads/integrations/insightly/543387/create-records-on-insightly-for-new-google-ads-leads

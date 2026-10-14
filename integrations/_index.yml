@@ -249,7 +249,6 @@
   arazzo: null
 - slug: insightly-monday-com
   label: monday.com
-  partner: monday-com
   partner_name: monday.com
   category: Project Management
   type: marketplace
@@ -257,7 +256,7 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/insightly/integrations/monday
   source: edge
-  status: pending-generation
+  status: pending-partner-spec
   arazzo: null
 - slug: insightly-shopify
   label: Shopify
@@ -297,7 +296,6 @@
   arazzo: null
 - slug: insightly-microsoft-office-365
   label: Microsoft Office 365
-  partner: microsoft-office-365
   partner_name: Microsoft Office 365
   category: Email
   type: marketplace
@@ -305,7 +303,7 @@
   channel: ipaas-usage
   evidence: https://zapier.com/apps/insightly/integrations/office-365
   source: edge
-  status: pending-generation
+  status: pending-partner-spec
   arazzo: null
 - slug: insightly-quotient
   label: Quotient
@@ -365,4 +363,30 @@
   evidence: https://zapier.com/apps/insightly/integrations/twilio
   source: edge
   status: pending-generation
+  arazzo: null
+- slug: insightly-okta-own
+  label: Okta (own)
+  partner: okta
+  partner_name: Okta (own)
+  category: Single Sign-On
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.okta.com/integrations/insightly/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: insightly-xero-own
+  label: Xero (own)
+  partner: xero
+  partner_name: Xero (own)
+  category: CRM and marketing
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://apps.xero.com/us/app/insightly-crm
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
   arazzo: null

@@ -469,7 +469,7 @@
     - alpha
     in_cloud: true
     builder: unknown (community connector; contributor not in the record)
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: insightly-fivetran
   label: Fivetran
@@ -495,7 +495,7 @@
     - connectors/applications/insightly
     vendor_link: https://www.insightly.com/
     builder: Fivetran
-  status: pending-generation
+  status: not-a-workflow
   arazzo: null
 - slug: insightly-meltano
   label: Meltano
@@ -528,7 +528,7 @@
     - bronze
     - unknown
     builder: 'community (Meltano Hub variant maintainers: airbyte, fostersdata, mrtns)'
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
 - slug: insightly-google-workspace-own
   label: Google Workspace (own)

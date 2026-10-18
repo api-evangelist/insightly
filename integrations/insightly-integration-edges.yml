@@ -3,6 +3,7 @@ method: searched
 source:
 - https://zapier.com/apps/insightly/integrations
 checked:
+- google-workspace/integrations/google-workspace-integration-edges.yml
 - https://composio.dev/toolkits/insightly
 - https://connectors.airbyte.com/files/registries/v0/cloud_registry.json
 - https://connectors.airbyte.com/files/registries/v0/oss_registry.json
@@ -16,6 +17,7 @@ checked:
 - https://zapier.com/apps/insightly/integrations
 - okta/integrations/okta-integration-edges.yml
 - xero/integrations/xero-integration-edges.yml
+- zoom/integrations/zoom-integration-edges.yml
 summary: null
 marketplace_apps:
 - marketplace: zapier
@@ -554,6 +556,40 @@ edges:
     builder: 'community (Meltano Hub variant maintainers: airbyte, fostersdata, mrtns)'
   detected_by: sweep-data-integration.py
   first_seen: '2026-10-18'
+- partner_name: Google Workspace (own)
+  partner: google-workspace
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://workspace.google.com/marketplace/app/insightly_crm/340379804296
+  mirror_of: google-workspace/integrations/google-workspace-integration-edges.yml
+  apps:
+  - Insightly CRM
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Google Workspace app
+- partner_name: Zoom (own)
+  partner: zoom
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.zoom.us/apps/LXhnAaxCQRufFqQm3tceDw
+  mirror_of: zoom/integrations/zoom-integration-edges.yml
+  apps:
+  - Insightly Activity Connector
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Zoom app
 templates:
 - title: Create records on Insightly for new Google Ads leads
   url: https://zapier.com/apps/google-ads/integrations/insightly/543387/create-records-on-insightly-for-new-google-ads-leads

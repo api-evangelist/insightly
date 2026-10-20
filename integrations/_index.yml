@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/calendly/integrations/insightly/1381863/create-new-insightly-leads-from-calendly-invitees
   template: https://zapier.com/apps/calendly/integrations/insightly/1381863/create-new-insightly-leads-from-calendly-invitees
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: insightly-create-insightly-records-from-new-gravity-forms-submissions
@@ -29,6 +30,7 @@
   evidence: https://zapier.com/apps/gravity-forms/integrations/insightly/1219368/create-insightly-records-from-new-gravity-forms-submissions
   template: https://zapier.com/apps/gravity-forms/integrations/insightly/1219368/create-insightly-records-from-new-gravity-forms-submissions
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: insightly-create-insightly-records-when-new-wix-rules-trigger
@@ -43,6 +45,7 @@
   evidence: https://zapier.com/apps/insightly/integrations/wix/1460523/create-insightly-records-when-new-wix-rules-trigger
   template: https://zapier.com/apps/insightly/integrations/wix/1460523/create-insightly-records-when-new-wix-rules-trigger
   source: template
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: insightly-create-google-sheets-rows-for-new-insightly-records
@@ -57,311 +60,7 @@
   evidence: https://zapier.com/apps/google-sheets/integrations/insightly/1222053/create-google-sheets-rows-for-new-insightly-records
   template: https://zapier.com/apps/google-sheets/integrations/insightly/1222053/create-google-sheets-rows-for-new-insightly-records
   source: template
-  status: pending-generation
-  arazzo: null
-- slug: insightly-pandadoc
-  label: PandaDoc
-  partner: pandadoc
-  partner_name: PandaDoc
-  category: Documents
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/pandadoc
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-mailchimp
-  label: Mailchimp
-  partner: mailchimp
-  partner_name: Mailchimp
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/mailchimp
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-typeform
-  label: Typeform
-  partner: typeform
-  partner_name: Typeform
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/typeform
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-wpforms
-  label: WPForms
-  partner_name: WPForms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/wpforms
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-squarespace-forms
-  label: Squarespace Forms
-  partner: squarespace
-  partner_name: Squarespace Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/squarespace-forms
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-gmail
-  label: Gmail
-  partner: gmail
-  partner_name: Gmail
-  category: Email
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/gmail
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-microsoft-outlook
-  label: Microsoft Outlook
-  partner: microsoft-outlook
-  partner_name: Microsoft Outlook
-  category: Calendar
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/microsoft-outlook
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-hubspot
-  label: HubSpot
-  partner: hubspot
-  partner_name: HubSpot
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/hubspot
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-unbounce
-  label: Unbounce
-  partner: unbounce
-  partner_name: Unbounce
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/unbounce
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-formstack-documents
-  label: Formstack Documents
-  partner_name: Formstack Documents
-  category: Documents
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/formstack-documents
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-activecampaign
-  label: ActiveCampaign
-  partner: activecampaign
-  partner_name: ActiveCampaign
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/activecampaign
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-formidable-forms
-  label: Formidable Forms
-  partner_name: Formidable Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/formidable
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-jotform
-  label: Jotform
-  partner: jotform
-  partner_name: Jotform
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/jotform
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-woocommerce
-  label: WooCommerce
-  partner: woocommerce
-  partner_name: WooCommerce
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/woocommerce
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-sitecapture
-  label: SiteCapture
-  partner_name: SiteCapture
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/sitecapture
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-trello
-  label: Trello
-  partner: trello
-  partner_name: Trello
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/trello
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-monday-com
-  label: monday.com
-  partner_name: monday.com
-  category: Project Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/monday
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-shopify
-  label: Shopify
-  partner: shopify
-  partner_name: Shopify
-  category: eCommerce
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/shopify
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-slack
-  label: Slack
-  partner: slack
-  partner_name: Slack
-  category: Team Chat
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/slack
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-constant-contact
-  label: Constant Contact
-  partner: constant-contact
-  partner_name: Constant Contact
-  category: Email Newsletters
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/constant-contact
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-microsoft-office-365
-  label: Microsoft Office 365
-  partner_name: Microsoft Office 365
-  category: Email
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/office-365
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-quotient
-  label: Quotient
-  partner_name: Quotient
-  category: Proposal & Invoice Management
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/quotient
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-easywebinar
-  label: EasyWebinar
-  partner: easywebinar
-  partner_name: EasyWebinar
-  category: Webinars
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/easywebinar
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: insightly-xero
-  label: Xero
-  partner: xero
-  partner_name: Xero
-  category: Accounting
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/xero
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-qualtrics
-  label: Qualtrics
-  partner: qualtrics
-  partner_name: Qualtrics
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/qualtrics
-  source: edge
-  status: pending-generation
-  arazzo: null
-- slug: insightly-twilio
-  label: Twilio
-  partner: twilio
-  partner_name: Twilio
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/insightly/integrations/twilio
-  source: edge
+  relationship: ipaas-bridge
   status: pending-generation
   arazzo: null
 - slug: insightly-okta-own
@@ -555,4 +254,336 @@
     sources: true
     builder: Pipedream repo (component)
   status: not-a-workflow
+  arazzo: null
+- slug: insightly-pandadoc
+  label: PandaDoc
+  partner: pandadoc
+  partner_name: PandaDoc
+  category: Documents
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/pandadoc
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-mailchimp
+  label: Mailchimp
+  partner: mailchimp
+  partner_name: Mailchimp
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/mailchimp
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-typeform
+  label: Typeform
+  partner: typeform
+  partner_name: Typeform
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/typeform
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-wpforms
+  label: WPForms
+  partner_name: WPForms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/wpforms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-squarespace-forms
+  label: Squarespace Forms
+  partner: squarespace
+  partner_name: Squarespace Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/squarespace-forms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-gmail
+  label: Gmail
+  partner: gmail
+  partner_name: Gmail
+  category: Email
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/gmail
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-microsoft-outlook
+  label: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_name: Microsoft Outlook
+  category: Calendar
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/microsoft-outlook
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-hubspot
+  label: HubSpot
+  partner: hubspot
+  partner_name: HubSpot
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/hubspot
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-unbounce
+  label: Unbounce
+  partner: unbounce
+  partner_name: Unbounce
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/unbounce
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-formstack-documents
+  label: Formstack Documents
+  partner_name: Formstack Documents
+  category: Documents
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/formstack-documents
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-activecampaign
+  label: ActiveCampaign
+  partner: activecampaign
+  partner_name: ActiveCampaign
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/activecampaign
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-formidable-forms
+  label: Formidable Forms
+  partner_name: Formidable Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/formidable
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-jotform
+  label: Jotform
+  partner: jotform
+  partner_name: Jotform
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/jotform
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-woocommerce
+  label: WooCommerce
+  partner: woocommerce
+  partner_name: WooCommerce
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/woocommerce
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-sitecapture
+  label: SiteCapture
+  partner_name: SiteCapture
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/sitecapture
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-trello
+  label: Trello
+  partner: trello
+  partner_name: Trello
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/trello
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-monday-com
+  label: monday.com
+  partner: monday-com
+  partner_name: monday.com
+  category: Project Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/monday
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-shopify
+  label: Shopify
+  partner: shopify
+  partner_name: Shopify
+  category: eCommerce
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/shopify
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-slack
+  label: Slack
+  partner: slack
+  partner_name: Slack
+  category: Team Chat
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/slack
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-constant-contact
+  label: Constant Contact
+  partner: constant-contact
+  partner_name: Constant Contact
+  category: Email Newsletters
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/constant-contact
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-microsoft-office-365
+  label: Microsoft Office 365
+  partner_name: Microsoft Office 365
+  category: Email
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/office-365
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-quotient
+  label: Quotient
+  partner_name: Quotient
+  category: Proposal & Invoice Management
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/quotient
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-easywebinar
+  label: EasyWebinar
+  partner: easywebinar
+  partner_name: EasyWebinar
+  category: Webinars
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/easywebinar
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: insightly-xero
+  label: Xero
+  partner: xero
+  partner_name: Xero
+  category: Accounting
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/xero
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-qualtrics
+  label: Qualtrics
+  partner: qualtrics
+  partner_name: Qualtrics
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/qualtrics
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
+  arazzo: null
+- slug: insightly-twilio
+  label: Twilio
+  partner: twilio
+  partner_name: Twilio
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/insightly/integrations/twilio
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-generation
   arazzo: null

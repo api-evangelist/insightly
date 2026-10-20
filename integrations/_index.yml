@@ -390,55 +390,30 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: insightly-zapier
-  label: Zapier
-  partner: zapier
-  partner_name: Zapier
+- slug: insightly-google-workspace-own
+  label: Google Workspace (own)
+  partner: google-workspace
+  partner_name: Google Workspace (own)
+  category: Google Workspace app
   type: marketplace
-  marketplace: zapier-directory
-  channel: ipaas-listing
-  evidence: https://zapier.com/apps/insightly/integrations
+  marketplace: own
+  channel: partner-built
+  evidence: https://workspace.google.com/marketplace/app/insightly_crm/340379804296
   source: edge
-  relationship: ipaas-bridge
-  contract_reference:
-    register: Zapier app directory (zapier.com/api/v4/apps)
-    spec_file: null
-    role: ipaas-connector:zapier
-    registered_name: Insightly
-    matched_domain: insightly.com
-    matched_by: domain
-    detected_by: sweep-workflow-automation.py
-    detected: '2026-10-15'
-    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
-    app_slug: insightly
-    beta: false
-    builder: unknown (not in the directory record)
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
-- slug: insightly-pipedream
-  label: Pipedream
-  partner: pipedream
-  partner_name: Pipedream
+- slug: insightly-zoom-own
+  label: Zoom (own)
+  partner: zoom
+  partner_name: Zoom (own)
+  category: Zoom app
   type: marketplace
-  marketplace: pipedream-components
-  channel: open-source-node
-  evidence: https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/insightly
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.zoom.us/apps/LXhnAaxCQRufFqQm3tceDw
   source: edge
-  relationship: ipaas-bridge
-  contract_reference:
-    register: Pipedream components (PipedreamHQ/pipedream components/)
-    spec_file: null
-    role: ipaas-connector:pipedream
-    registered_name: insightly
-    matched_domain: insightly.com
-    matched_by: domain
-    detected_by: sweep-workflow-automation.py
-    detected: '2026-10-15'
-    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
-    app_slug: insightly
-    actions: true
-    sources: true
-    builder: Pipedream repo (component)
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null
 - slug: insightly-airbyte
@@ -530,29 +505,54 @@
     builder: 'community (Meltano Hub variant maintainers: airbyte, fostersdata, mrtns)'
   status: not-a-workflow
   arazzo: null
-- slug: insightly-google-workspace-own
-  label: Google Workspace (own)
-  partner: google-workspace
-  partner_name: Google Workspace (own)
-  category: Google Workspace app
+- slug: insightly-zapier
+  label: Zapier
+  partner: zapier
+  partner_name: Zapier
   type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://workspace.google.com/marketplace/app/insightly_crm/340379804296
+  marketplace: zapier-directory
+  channel: ipaas-listing
+  evidence: https://zapier.com/apps/insightly/integrations
   source: edge
-  relationship: platform-app
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Zapier app directory (zapier.com/api/v4/apps)
+    spec_file: null
+    role: ipaas-connector:zapier
+    registered_name: Insightly
+    matched_domain: insightly.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: insightly
+    beta: false
+    builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
-- slug: insightly-zoom-own
-  label: Zoom (own)
-  partner: zoom
-  partner_name: Zoom (own)
-  category: Zoom app
+- slug: insightly-pipedream
+  label: Pipedream
+  partner: pipedream
+  partner_name: Pipedream
   type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://marketplace.zoom.us/apps/LXhnAaxCQRufFqQm3tceDw
+  marketplace: pipedream-components
+  channel: open-source-node
+  evidence: https://github.com/PipedreamHQ/pipedream/tree/d5872355ef27b4efa769f05352f2820c299a456e/components/insightly
   source: edge
-  relationship: platform-app
+  relationship: ipaas-bridge
+  contract_reference:
+    register: Pipedream components (PipedreamHQ/pipedream components/)
+    spec_file: null
+    role: ipaas-connector:pipedream
+    registered_name: insightly
+    matched_domain: insightly.com
+    matched_by: domain
+    detected_by: sweep-workflow-automation.py
+    detected: '2026-10-15'
+    signal_note: one edge per (provider, platform); actions, triggers and usage counts are context, never read
+    app_slug: insightly
+    actions: true
+    sources: true
+    builder: Pipedream repo (component)
   status: not-a-workflow
   arazzo: null
